@@ -1,0 +1,13 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class = "ch.qos.logback.classic.encoder.PatternLayoutEncoder" >
+            <pattern> %blue(%date) %red([%thread]) %cyan([%-5level]) %white(%logger{10} - %message%n)</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.mani" class="INFO"/>
+
+    <root level = "DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
